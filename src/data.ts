@@ -17,12 +17,32 @@ export interface Song {
   duration?: number; // Duration to play in seconds
 }
 
+// Assets
+const song1 = new URL('./1.mp4', import.meta.url).href;
+const song2 = new URL('./2.mp4', import.meta.url).href;
+const song3 = new URL('./3.mp4', import.meta.url).href;
+const song4 = new URL('./4.mp4', import.meta.url).href;
+const song5 = new URL('./5.mp4', import.meta.url).href;
+const song6 = new URL('./6.mp4', import.meta.url).href;
+const song7 = new URL('./7.mp4', import.meta.url).href;
+const song8 = new URL('./8.mp4', import.meta.url).href;
+
+const img9 = new URL('./9.jpeg', import.meta.url).href;
+const vid14 = new URL('./14.mp4', import.meta.url).href;
+const img10 = new URL('./10.jpeg', import.meta.url).href;
+const vid15 = new URL('./15.mp4', import.meta.url).href;
+const img11 = new URL('./11.jpeg', import.meta.url).href;
+const vid16 = new URL('./16.mp4', import.meta.url).href;
+const img12 = new URL('./12.jpeg', import.meta.url).href;
+const vid17 = new URL('./17.mp4', import.meta.url).href;
+const img13 = new URL('./13.jpeg', import.meta.url).href;
+
 export const playlist: Song[] = [
   {
     id: '1',
     title: 'Photograph',
     artist: 'Ed Sheeran',
-    url: '1.mp4',
+    url: song1,
     startTime: 60,
     duration: 10,
     lyrics: [
@@ -34,7 +54,7 @@ export const playlist: Song[] = [
     id: '2',
     title: 'Perfect',
     artist: 'Ed Sheeran',
-    url: '2.mp4',
+    url: song2,
     startTime: 45,
     duration: 10,
     lyrics: [
@@ -46,7 +66,7 @@ export const playlist: Song[] = [
     id: '3',
     title: 'Rewrite the Stars',
     artist: 'James Arthur & Anne-Marie',
-    url: '3.mp4',
+    url: song3,
     startTime: 50,
     duration: 10,
     lyrics: [
@@ -58,7 +78,7 @@ export const playlist: Song[] = [
     id: '4',
     title: 'Thinking Out Loud',
     artist: 'Ed Sheeran',
-    url: '4.mp4',
+    url: song4,
     startTime: 40,
     duration: 10,
     lyrics: [
@@ -70,7 +90,7 @@ export const playlist: Song[] = [
     id: '5',
     title: 'Beautiful Things',
     artist: 'Benson Boone',
-    url: '5.mp4',
+    url: song5,
     startTime: 30,
     duration: 10,
     lyrics: [
@@ -82,7 +102,7 @@ export const playlist: Song[] = [
     id: '6',
     title: 'All of Me',
     artist: 'John Legend',
-    url: '6.mp4',
+    url: song6,
     startTime: 65,
     duration: 10,
     lyrics: [
@@ -94,7 +114,7 @@ export const playlist: Song[] = [
     id: '7',
     title: 'A Thousand Years',
     artist: 'Christina Perri',
-    url: '7.mp4',
+    url: song7,
     startTime: 55,
     duration: 10,
     lyrics: [
@@ -106,7 +126,7 @@ export const playlist: Song[] = [
     id: '8',
     title: 'Love Yourself',
     artist: 'Justin Bieber',
-    url: '8.mp4',
+    url: song8,
     startTime: 40,
     duration: 10,
     lyrics: [
@@ -120,59 +140,59 @@ export const mediaItems: MediaItem[] = [
   {
     id: '1',
     type: 'image',
-    url: '9.jpeg',
+    url: img9,
     caption: 'Every moment with you',
     duration: 5,
   },
   {
     id: '2',
     type: 'video',
-    url: '14.mp4',
+    url: vid14,
     caption: 'Is a memory I treasure',
   },
   {
     id: '3',
     type: 'image',
-    url: '10.jpeg',
+    url: img10,
     caption: 'You are my perfect',
     duration: 5,
   },
   {
     id: '4',
     type: 'video',
-    url: '15.mp4',
+    url: vid15,
     caption: 'Rewriting our stars',
   },
   {
     id: '5',
     type: 'image',
-    url: '11.jpeg',
+    url: img11,
     caption: 'Thinking out loud',
     duration: 5,
   },
   {
     id: '6',
     type: 'video',
-    url: '16.mp4',
+    url: vid16,
     caption: 'All of me loves all of you',
   },
   {
     id: '7',
     type: 'image',
-    url: '12.jpeg',
+    url: img12,
     caption: 'For a thousand years',
     duration: 5,
   },
   {
     id: '8',
     type: 'video',
-    url: '17.mp4',
+    url: vid17,
     caption: 'Love yourself',
   },
   {
     id: '9',
     type: 'image',
-    url: '13.jpeg ',
+    url: img13,
     caption: 'Forever yours',
     duration: 5,
   },
